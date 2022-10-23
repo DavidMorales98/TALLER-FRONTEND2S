@@ -1,0 +1,56 @@
+* {
+    font-family: 'Playfair Display', serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(0deg, #fffbe9 0%, #ad8b73 75%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.cabecera {
+    grid-area: 1 / 1 / 2 / 4;
+    border:2px solid red !important;
+}
+
+.carrusel {
+    grid-area: 2 / 1 / 4 / 4;
+    border:2px solid red !important;
+}
+
+.informacion {
+    grid-area: 4 / 1 / 5 / 4;
+    border:2px solid red !important;
+}
+
+.info-izq {
+    grid-area: 5 / 1 / 6 / 2;
+    border:2px solid red !important;
+}
+
+.info-central {
+    grid-area: 5 / 2 / 6 / 3;
+    border:2px solid red !important;
+}
+
+.info-der {
+    grid-area: 5 / 3 / 6 / 4;
+    border:2px solid red !important;
+}
+
+.pie-pagina {
+    grid-area: 6 / 1 / 7 / 4;
+    border:2px solid red !important;
+}
