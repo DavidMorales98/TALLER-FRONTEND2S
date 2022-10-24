@@ -17,7 +17,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 25%);
+    grid-template-rows: 0.75fr 1fr 0 repeat(2, 1fr) 0.5fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -25,7 +25,8 @@ body {
 .cabecera {
     grid-area: 1 / 1 / 2 / 4;
     background-color: #D8CCA3;
-
+    padding: 0px;
+    height: 100px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 0.5fr 0.2fr;
@@ -75,10 +76,10 @@ body {
 }
 
 .carrusel {
-    grid-area: 2 / 1 / 4 / 4;
+    grid-area: 1 / 1 / 4 / 4;
     align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     display: grid;
     grid-auto-flow: column;
     scroll-behavior: auto;
@@ -87,10 +88,56 @@ body {
     overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
     scrollbar-width: none;
+
 }
 
 .carrusel img{
     height: 300px;
     width: 500px;
     object-fit: cover !important;
+}
+
+.informacion {
+    grid-area: 4 / 1 / 5 / 4;
+    height: 200px;
+    margin-bottom: 15%;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: #fff;  
+}
+p{
+    
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.info-izq {
+    grid-area: 5 / 1 / 6 / 2;
+}
+
+
+.info-central {
+    grid-area: 5 / 2 / 6 / 3;
+}
+
+.info-der {
+    grid-area: 5 / 3 / 6 / 4;
+}
+
+p{
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.pie-pagina {
+    grid-area: 6 / 1 / 7 / 4;
+    background-color: #967E76;
+    color: #fff;
+    text-align: center;
+    align-items: center;
 }
