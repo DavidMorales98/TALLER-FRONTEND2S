@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 * {
     font-family: 'Playfair Display', serif !important;
     margin: 0;
@@ -15,42 +17,60 @@ body {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 20%);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
 .cabecera {
     grid-area: 1 / 1 / 2 / 4;
-    border:2px solid red !important;
+    background-color: #D8CCA3;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.5fr 0.2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-.carrusel {
-    grid-area: 2 / 1 / 4 / 4;
-    border:2px solid red !important;
+.cabecera img {
+    grid-area: 1 / 1 / 3 / 3;
+    height: 80%;
+    width: auto;
+    margin-top: 10px;
+    align-items: center;
+    padding-left: 45%;
+
 }
 
-.informacion {
-    grid-area: 4 / 1 / 5 / 4;
-    border:2px solid red !important;
+.cabecera .titulo {
+    grid-area: 1 / 3 / 2 / 6;
+    text-align: center;
+    font-weight: 700px;
 }
 
-.info-izq {
-    grid-area: 5 / 1 / 6 / 2;
-    border:2px solid red !important;
+.cabecera .link1 {
+    grid-area: 2 / 3 / 3 / 4;
+    text-align: center;
 }
 
-.info-central {
-    grid-area: 5 / 2 / 6 / 3;
-    border:2px solid red !important;
+.cabecera .link2 {
+    grid-area: 2 / 4 / 3 / 5;
+    text-align: center;
+
 }
 
-.info-der {
-    grid-area: 5 / 3 / 6 / 4;
-    border:2px solid red !important;
+.cabecera .link3 {
+    grid-area: 2 / 5 / 3 / 6;
+    text-align: center;
+
+}
+.cabecera a{
+    text-decoration: none;
+    color: black;
 }
 
-.pie-pagina {
-    grid-area: 6 / 1 / 7 / 4;
-    border:2px solid red !important;
+.cabecera a:hover{
+    color:  #967E76;
 }
+
