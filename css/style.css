@@ -17,7 +17,7 @@ body {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 20%);
+    grid-template-rows: repeat(6, 25%);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -74,3 +74,23 @@ body {
     color:  #967E76;
 }
 
+.carrusel {
+    grid-area: 2 / 1 / 4 / 4;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.carrusel img{
+    height: 300px;
+    width: 500px;
+    object-fit: cover !important;
+}
