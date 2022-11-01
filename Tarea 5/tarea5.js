@@ -2,16 +2,31 @@
 //David Morales P. 19881480-6
 
 //1.- Secuencia de fibonacci
-function fibonacci(n){
-    //condicional de termino
-    if (n === 1 || n===0){
-        return n;
+function fibonacci(num) {
+    if(num < 2) {
+        return num;
     }
-    //llamado recursivo
-    return fibonacci(n-1) + fibonacci(n-2);
+    else {
+        return fibonacci(num-1) + fibonacci(num - 2);
+    }
 }
 
-console.log(fibonacci(5))
+//a.- Entre los numeros 0 y 1000
+for(let i = 0; i < 17; i++) {
+        console.log(fibonacci(i));
+}
+//b.- Números pares entre 0 y 1000
+for(let i = 0; i < 17; i++) {
+    if (fibonacci(i)%2==0){
+        console.log(fibonacci(i));
+    }
+}
+//c.- Números impares entre 0 y 1000
+for(let i = 0; i < 17; i++) {
+    if (fibonacci(i)%2!=0){
+        console.log(fibonacci(i));
+    }
+}
 //2.- Del siguiente arreglo de strings retornar otro arreglo con todo a mayúsculas.
 
 let pokeones = [
