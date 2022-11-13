@@ -1,0 +1,155 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+body {
+    background-image: url(/img/pTmWCw.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .titulo {
+    color: #ffcb05;
+    font-size: 700%;
+    padding: 0;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: #2a75bb;
+
+}
+
+header img {
+    height: 200px;
+    width: auto;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo {
+    color: aliceblue;
+    font-size: 200%;
+    padding-top: 0;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /*height: 2600px;*/
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-image: url(/img/pokemon-pokeball-pokedex-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-image: url(/img/Bosque_Crecido.png);
+    background-position: center center;
+    margin: 80px 40px;
+    padding: 20px 15px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.container .card:hover {
+    height: 250px;
+
+}
+
+.container .card .image {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -20%;
+    left: 8px;
+}
+
+.container .card .image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+.container .card .image .close{
+    opacity: 1;
+}
+.container .card .image .open{
+    opacity: 0;
+}
+.container .card:hover .image .close{
+    opacity: 0;
+    transition: opacity 0.2s 0.3s;
+}
+.container .card:hover .image .open{
+    opacity: 1;
+    transition: opacity 0.4s 0.3s;
+}
+
+.container .card .content {
+    position: relative;
+    top: -180px;
+    padding: 10px 15px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s 0.3s;
+
+}
+
+footer {
+    bottom: 0;
+    height: 15%;
+    width: 100%;
+    color: #ffcb05;
+    text-align: center;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: #2a75bb;
+}
