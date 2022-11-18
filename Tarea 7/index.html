@@ -8,6 +8,7 @@
     <title>Rick and Morty</title>
     <!-- importar la hoja de estilos de la web-->
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -15,17 +16,24 @@
     <header>
         <img src="https://nerdmacia.cl/wp-content/uploads/2017/06/Rick_and_Morty_Logo_and_Image-696x260.png">
     </header>
+    <h1>DESCUBRE A LOS PERSONAJES DANDO CLICK A LA PISTOLA DE PORTALES!</h1>
     <div class="contenido">
         <div class="nave">
-            <img src="/img/pngegg.png" alt="" class="objeto naveS move-right move-position" id="NaveRickyMorty">
+            <img src="./img/pngegg.png" alt="" class="objeto naveS move-right move-position" id="NaveRickyMorty">
         </div>
-        <div class="container">
+        <div class="pistol-zone">
+            <button><img src="./img/pngegg-pistol.png" alt="" class="" id="PistolaPortales"></button>
+        </div>
+        <!--
+        <button class="btn1">Hide</button>
+        <button class="btn2">Show</button>-->
+        <div class="container" id="container-portals">
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -34,10 +42,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -46,10 +54,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -58,10 +66,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -70,10 +78,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -82,10 +90,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -94,10 +102,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -106,10 +114,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -118,10 +126,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -130,10 +138,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -142,10 +150,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -154,10 +162,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -166,10 +174,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -178,10 +186,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -190,10 +198,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -202,10 +210,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -214,10 +222,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -226,10 +234,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -238,10 +246,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -250,10 +258,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -262,10 +270,10 @@
             </div>
             <div class="card">
                 <div class="imagenes-card">
-                    <img src="/img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
+                    <img src="./img/image_processing20200616-12657-1o37mef.gif" alt="" class="fondo-card1">
                 </div>
                 <div class="contenido-card">
-                    <img src="/img/Bosque_Crecido.png" alt="" class="img-card">
+                    <img src="./img/Bosque_Crecido.png" alt="" class="img-card">
                     <div class="texto-card">
                         <h2>Nombre</h2>
                         <h3>Especie</h3>
@@ -278,14 +286,15 @@
     <footer>
         <h2>Tarea 7 - Curso Frontend S2 2/2022 - Haciendo uso de POO + CSS</h2>
         <img
-            src="/img/kisspng-rick-sanchez-morty-smith-pickle-rick-drawing-porta-svgs-for-geeks-5ca62da914f721.3501253815543945370859.png">
+            src="./img/kisspng-rick-sanchez-morty-smith-pickle-rick-drawing-porta-svgs-for-geeks-5ca62da914f721.3501253815543945370859.png">
     </footer>
 
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Archivo personalizado de JS -->
-    <script src="script/main.js"></script>
+    <script src="./script/main.js"></script>
+
 </body>
 
 </html>

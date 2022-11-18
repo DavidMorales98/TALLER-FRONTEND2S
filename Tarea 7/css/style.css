@@ -25,28 +25,57 @@ header {
     align-items: center;
 }
 
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #NaveRickyMorty{
 position: absolute;
-z-index: 1;
+z-index: 999;
 height: auto;
 width: 150px;
 
-transition: all 1s ease-in-out;
--webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
--moz-transition: all 1s ease-in-out; /** Firefox **/
--o-transition: all 1s ease-in-out; /** Opera **/
+transition: all 0.8s ease-in;
+-webkit-transition: all 0.5s ease-in; /** Chrome & Safari **/
+-moz-transition: all 0.5s ease-in; /** Firefox **/
+-o-transition: all 0.5s ease-in; /** Opera **/
 
 }
 
+.pistol-zone{
+    display: flex;
+    align-items: center;
 
+}
+button{
+    height: 100px;
+    width: 300px;
+    background-color: transparent;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    border: 0;
 
+}
+#PistolaPortales{
+    height: 100%;
+    width: 100%;
+}
 .container {
     height: auto;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: black;
+    background-color: #030303;
     display: flex;
     align-items: center;
     justify-content: center;
