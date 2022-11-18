@@ -1,13 +1,13 @@
-@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.cdnfonts.com/css/shlop');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Pokemon Solid', sans-serif;
+    font-family: 'Shlop', sans-serif;
 }
 
 body {
-    background-image: url(/img/pTmWCw.webp);
+    background-image: url("https://img5.goodfon.com/wallpaper/nbig/3/8e/rick-and-morty-planeta-morgenshtern-korabl.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -25,49 +25,28 @@ header {
     align-items: center;
 }
 
-header .titulo {
-    color: #ffcb05;
-    font-size: 700%;
-    padding: 0;
-    -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: #2a75bb;
+
+#NaveRickyMorty{
+position: absolute;
+z-index: 1;
+height: auto;
+width: 150px;
+
+transition: all 1s ease-in-out;
+-webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+-moz-transition: all 1s ease-in-out; /** Firefox **/
+-o-transition: all 1s ease-in-out; /** Opera **/
 
 }
 
-header img {
-    height: 200px;
-    width: auto;
-}
 
-.subtitulo {
-    display: flex;
-    justify-content: center;
-}
 
-.subtitulo {
-    color: aliceblue;
-    font-size: 200%;
-    padding-top: 0;
-}
-
-.contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container{
-    /*height: 2600px;*/
+.container {
     height: auto;
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
-    background-image: url(/img/pokemon-pokeball-pokedex-wallpaper-preview.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,80 +55,80 @@ header img {
 
 .container .card {
     position: relative;
-    max-width: 300px;
-    height: 215px;
-    background-image: url(/img/Bosque_Crecido.png);
-    background-position: center center;
+    width: 350px;
+    height: 500px;
     margin: 80px 40px;
-    padding: 20px 15px;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.container .card .imagenes-card{
+    position: absolute;
+    top:0;
+    bottom:0;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.container .card .fondo-card1{
+    position: relative;
+    object-fit: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+.img-card{
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 30%;
+    left: 30%;
+    box-shadow: 0 5px 20px greenyellow;
     transition: 0.3s ease-in-out;
-    border-radius: 15px;
-}
-
-.container .card:hover {
-    height: 250px;
-
-}
-
-.container .card .image {
-    position: relative;
-    width: 260px;
-    height: 260px;
-    top: -20%;
-    left: 8px;
-}
-
-.container .card .image img {
-    max-width: 100%;
-    border-radius: 15px;
-}
-.container .card .image .close{
-    opacity: 1;
-}
-.container .card .image .open{
-    opacity: 0;
-}
-.container .card:hover .image .close{
-    opacity: 0;
-    transition: opacity 0.2s 0.3s;
-}
-.container .card:hover .image .open{
-    opacity: 1;
-    transition: opacity 0.4s 0.3s;
-}
-
-.container .card .content {
-    position: relative;
-    top: -180px;
-    padding: 10px 15px;
-    font-size: 30px;
-    color: #fff;
-    -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: black;
-    text-align: center;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s ease-in-out;
 }
 
-.container .card:hover .content {
-    margin-top: 30px;
+.texto-card {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: black;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: greenyellow;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.container .card:hover .img-card {
     visibility: visible;
     opacity: 1;
     transition: opacity 0.4s 0.3s;
+}
 
+.container .card:hover .texto-card {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.4s 0.3s;
 }
 
 footer {
     bottom: 0;
-    height: 15%;
+    height: 1%;
     width: 100%;
-    color: #ffcb05;
+    color: #fff;
     text-align: center;
     -webkit-text-stroke: 0.5px;
-    -webkit-text-stroke-color: #2a75bb;
+    -webkit-text-stroke-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    height: 100px;
+    width: auto;
+    float: right;
 }

@@ -34,3 +34,11 @@ axios.get(base_url)
 .then(function(){
 
 });
+var img=document.getElementById('NaveRickyMorty');
+// Establecer el evento de clic (cuando se mueve el mouse) para lograr efectos dinámicos
+document.onmousemove=function (e) {
+    // Establece la posición de la imagen igual a la posición del mouse (puedes sumar o restar la distancia apropiadamente)
+    img.style.left=e.pageX-80 + 'px';
+    img.style.top=e.pageY-80 + 'px';
+}
+

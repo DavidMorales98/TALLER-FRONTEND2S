@@ -1,0 +1,1 @@
+Intente realizar esta tarea solo haciendo uso de CSS, pero con el slide se me hizo imposible :'(
